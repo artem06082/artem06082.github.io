@@ -1,0 +1,137 @@
+@page
+@model WebApplication2.Pages.IndexModel
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мир Чая</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Raleway', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            text-align: center;
+        }
+
+        header {
+            background: linear-gradient(135deg, #3f51b5, #1a237e);
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav {
+            background: #283593;
+            padding: 15px;
+        }
+
+            nav a {
+                color: white;
+                text-decoration: none;
+                font-size: 18px;
+                margin: 0 15px;
+                font-weight: bold;
+                transition: color 0.3s;
+            }
+
+                nav a:hover {
+                    color: #ffeb3b;
+                }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #3f51b5;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .tea-image {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .tea-list {
+            text-align: left;
+            padding-left: 20px;
+            font-size: 18px;
+        }
+
+        footer {
+            background: #3f51b5;
+            color: white;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #ff9800;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 18px;
+            margin-top: 20px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+            .btn:hover {
+                background: #e68900;
+            }
+    </style>
+</head>
+<body>
+    <header>Мир Чая</header>
+    <nav>
+        <a href="#about">О чае</a>
+        <a href="#types">Виды чая</a>
+        <a href="#contact">Контакты</a>
+    </nav>
+
+    <div class="container" id="about">
+        <h2>О чае</h2>
+        <p>Чай — это напиток, приготовленный из листьев чайного куста, прошедших различные этапы обработки.</p>
+        <img src="https://cdn.pixabay.com/photo/2016/09/19/18/01/tee-1680885_1280.jpg" class="tea-image">
+    </div>
+
+    <div class="container" id="types">
+        <h2>Виды чая</h2>
+        <ul class="tea-list">
+            <li>Зелёный чай</li>
+            <li>Чёрный чай</li>
+            <li>Белый чай</li>
+            <li>Жёлтый чай</li>
+            <li>Чай Улун (оолонг)</li>
+            <li>Чай Пуэр</li>
+        </ul>
+        <a href="#contact" class="btn">Связаться с нами</a>
+    </div>
+
+    <footer id="contact">
+        <p>&copy; 2025 Мир Чая. Все права защищены.</p>
+    </footer>
+</body>
+</html>
